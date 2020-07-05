@@ -1,0 +1,114 @@
+/* class div */
+.card-list-divStyle {
+border: 5px solid pink;
+background-color: lightgreen;
+width: 85vw;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 20px;
+}
+/* over pics */
+img:hover{
+	border: 4px solid pink; /* rgb(77, 255, 77); */
+    padding: 0px;
+}
+/* blocks */
+div{
+	text-align: center;
+	font-size: large; /* 25px 110% large small x-large xx-large x-small xx-small medium 1.5em 0.8em */
+	font-style: italic; 
+	font-weight: bold;
+	background-color: lightblue;
+	height: 250;
+	width: 200;
+}
+/* Main title */
+h1{
+	color:rgb(0, 0, 255);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 0px rgb(77, 255, 77);
+	border: 6px solid green;
+    padding: 6px;
+    box-shadow: 4px 10px 0px rgb(0, 179, 0); 
+    border-radius: 50px;
+    margin:auto;
+    width: 70%;
+}
+.container{
+	width: 100%;
+	display: grid ;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr;
+	/*grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns: 1fr 1fr;  	
+	/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+	grid-gap: 1vw;
+	transition: all 3s;
+}
+.container > div {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.item-1{
+	background-color: green;
+}	
+.item-2{
+ 	background-color: rgb(125,25,0);
+}			 
+.item-3{
+ 	background-color: rgb(125,0,63);
+}
+.item-4{
+ 	background-color: rgb(125,0,125);
+}
+.item-5{
+ 	background-color: rgb(175,50,175);
+	grid-column: 2/4;
+	grid-row: 2/3;
+}
+.item-6{
+ 	background-color: rgb(215,100,225);
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+.item-7{
+ 	background-color: rgb(256,141,256);
+	grid-column: 2/4;
+	grid-row: 4/5;
+}
+/* Animation with JS */
+.container-grid-animate {
+  /*grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px;*/
+  grid-gap: 3vw;
+  color: yellow;
+}
+button {
+	text-align: center ;
+  background-color: blue;
+	color:lightgreen;
+	font-size: 15px;
+	font-weight: bold;
+  /*margin: 15px 40%;*/
+  width: 160px;
+  padding: 4px;
+  border: 3px solid green;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.wrapper-center-page {  
+	  margin: 0;
+  position: absolute;
+  /*top: 50%;*/
+  left: 50%;
+  /*-ms-transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+}
+.wrapper-center-block {
+	display: flex;
+	justify-content: center;
+  }
